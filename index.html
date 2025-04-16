@@ -3,7 +3,27 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-
+    <body id="body" height="500px">
+        <div id="lightbulbDiv">
+            <svg width="50" height="200" id="svg">
+                <g>
+                    <line id="line" x1="25" x2="25"y1="0" y2="500" style="stroke:rgb(0, 0, 0);stroke-width:5"/>
+                </g>
+            </svg>
+            <br>
+            <img id="lightbulb" src="images/lightbulb.webp" alt="lightbulb">
+            <br>
+            <svg width="500px" height="240" id="smile">
+                <g id="smile">
+                    <circle cx="200" cy="80" r="20" fill="white"/>
+                    <circle cx="300" cy="80" r="20" fill="white"/>
+                    <path d="M 100 100 C 200 200, 300 200, 400 100 C 200 250, 300 250, 100 100" style="stroke:rgb(255, 255, 255)" fill="white"/>
+                </g>
+            </svg>
+        </div>
+        <div id="switchDiv">
+            <img id="switch" src="images/switch1.webp" width="200px">
+        </div>
+        <script type="module" src="./js/Main.js"></script>
     </body>
 </html>
